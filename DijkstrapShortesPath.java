@@ -37,14 +37,14 @@ public class DijkstrapShortesPath{
 			Integer v = open.get(0);
 			closed.add(v);
 			open.remove(v);
-			/*
+			
 			System.out.println(sequence);
 			
 			System.out.println("Open: " + open);
 			System.out.println("Closed: " + closed);
 			
 			sequence++;
-			*/
+			
 			List<Integer> adj = graph.getAdjacents(v);
 			for(Integer w : adj){
 				if(!closed.contains(w)){
